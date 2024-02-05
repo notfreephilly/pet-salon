@@ -4,13 +4,98 @@
     padding: 0;
 }
 
+a:hover {
+    /* background-color: white; */
+    /* opacity: 0.40; */
+    font-size: 2.5rem;
+}
 
-/* UTILITIES */
+body {
+    margin: 1rem;
+    background-color: #ced4da;
+}
+
+/* HEADER */
+.home-header {
+    margin: .5rem 0;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid green;
+}
+
+.home-header h1 {
+    font-size: 4rem;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+.home-header nav {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 2rem;
+    /* height: 2rem; */
+}
+
+.home-header a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    /* background-color: gray; */
+    padding: 6px 16px;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
 
 
 
 /* MAIN */
+.home-container {
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(800px, auto);
+    grid-gap: 4rem;
+    line-height: 30px;
+    /* grid-column-gap: 4rem; */
+    /* grid-template-rows: 400px 250px; */
+}
+.home-container div {
+    padding: 8px 12px;
+    border: 2px solid black;
+    /* margin: 4px 2px; */
+    text-align: center;
+}
 
+.home-container h2 {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+.item3 ul {
+    list-style: none;
+}
+
+.count-and-names {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 4rem;
+}
+
+.count-and-names section {
+    border: 2px solid green;
+    text-align: center;    
+    line-height: 30px;
+}
+
+.count-and-names h3 {
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 1.5rem;
+
+}
 
 
 /* WELCOME */
@@ -22,8 +107,31 @@
 
 
 /* FOOTER */
-.site-footer {
-    background-color: black;
-    height: 10rem;
-    color: white;
+.salon-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    height: 12rem;
+    color: black;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 2.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    font-size: 2rem;
+}
+
+.home-footer a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    /* padding: 6px 16px; */
 }

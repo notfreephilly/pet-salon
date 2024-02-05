@@ -5,45 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="side-init">
-        <div>
-            <h1>Pet salon project</h1>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="register.html">Register</a>
-            </nav>
-        </div>
+    <header class="home-header">
+        <h1>Furry Cutz</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
     </header>
 
-    <main class="">
-        <div class="welcome-section">
-            <div>
-                <img src="" alt="">
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex ab atque corrupti maxime, ad labore sit cumque earum, cupiditate sed. Blanditiis autem veritatis, rerum doloremque dicta iusto doloribus laboriosam.</p>
+    <!-- <div class="container-title">
+        <h1>Choose your character</h1>
+    </div> -->
+
+    <main class="home-container">
+        <div class="item-1">
+            <img src="https://media0.giphy.com/media/1G6zdJx1EqTfXwd6ln/giphy.gif?cid=ecf05e47wubkk5u7qstloeovsu1ipmf0xl79wbinwh9ffhd8&ep=v1_gifs_related&rid=giphy.gif&ct=s" alt="dog shake gif">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae officiis mollitia, iure, aspernatur adipisci iusto quo quisquam reprehenderit facilis unde, maiores sunt saepe repudiandae veniam? Porro illum id eveniet iusto?</p>
+        </div>
+        <div class="item-2">
+            <img src="img/catlook.jpeg" alt="shocked cat" width="300" height="300">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laboriosam quia earum iusto est vel sint vitae placeat aliquam ab omnis, cumque nulla? Voluptates blanditiis vel eos odit? Non, quidem.</p>
         </div>
 
-        <div class="services-section">
-            <div>
-                <img src="" alt="">
-            </div>
+        <div class="item3">
+            <img src="https://media1.giphy.com/media/YiHfUCv6h3GLKkqyKw/giphy.webp?cid=82a1493bibjnrb5rb8939smqahftwo1l68rjat51ybcttfpd&ep=v1_stickers_trending&rid=giphy.webp&ct=s" alt="sloth dancing">
+            <h2>Check out these awesome deals!</h2>
             <ul>
-                <li>Grooming</li>
-                <li>Vaccines</li>
-                <li>Trainings</li>
-                <li>Mobile</li>
+                <li>2 groomings for the price of 1!</li>
+                <li>50% off toys for this month only</li>
+                <li>Free pet food of your choice when signing up for a memebership</li>
             </ul>
         </div>
-        
+        <div class="item4">
+            <h2>Adopt one of your own!</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repudiandae.</li>
+            </ul>
+        </div>
     </main>
-        
-    <footer class="site-footer">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nihil.</p>
-    </footer>
 
-    <!-- <script src="/scripts/script.js"></script> -->
+
+    <div class="count-and-names">
+
+        <section class="pets-registered">
+            <h3>&#8595; See how many of our friends are registered with us! &#8595;</h3>
+            <button id="woof-btn">Woof!</button>
+            <div id="registered-result"></div>
+        </section>
+
+        <section class="pet-names">
+            <h3>&#8595; Check out the names of our fuzzy friends! &#8595;</h3>
+            <button id="meow-btn">Meow!</button>
+            <div id="name-result"></div>
+        </section>
+    </div>
+
+    <footer class="home-footer">
+        <div class="salon-address">
+            <p>393 Woof Paw Rd</p>
+            <p>Petland, WW</p>
+            <p>40282</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Register</a>
+        </nav>
+    </footer>
+    <script src="/scripts/register.js"></script>
 </body>
 </html>

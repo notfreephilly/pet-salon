@@ -1,3 +1,11 @@
+// function displayFooterInfo() {
+//     document.getElementById('info').innerHTML = `
+//     <p>Welcome to ${salon.name}. Happy to have you</p>`
+// }
+// displayFooterInfo();
+
+
+
 var globalVariable = "I'm in a global scope";
 
 function myFunction() {
