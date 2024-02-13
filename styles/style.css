@@ -97,12 +97,27 @@ body {
 
 }
 
+#pets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .pets {
     height: 6rem;
 }
 
+.hidden {
+    display: none;
+}
 
-/* WELCOME */
+.alert-error {
+    background-color: red;
+}
+
+/* .info .container {
+    height: rem;
+    background-color: gray;
+} */
 
 
 
@@ -139,3 +154,5 @@ body {
     font-family: 'Rubik Doodle Shadow', system-ui;
     /* padding: 6px 16px; */
 }
+
+

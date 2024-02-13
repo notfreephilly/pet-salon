@@ -24,7 +24,7 @@ function displayPetCards() {
                 <p>Service: ${pet.service}</p>
                 <p>Type: ${pet.type}</p>
                 <p>Payment Method: ${pet.payment}</p>
-                <button onClick="deletePet()">Delete</button>
+            
             </div>
         `;
         console.log(card);

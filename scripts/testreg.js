@@ -9,6 +9,7 @@ let salon = {
     },
     pets: [] 
 }
+console.log(salon.address.street);
 // constructor
 
 let petId = 0;
@@ -109,7 +110,7 @@ function showNotifications(msg, type) {
 function register() {
 
     let newPet = new Pet(inputName.value, inputAge.value, inputGender.value, inputBreed.value, inputService.value, inputType.value, inputPayment.value);
-    // console.log(newPet);
+    console.log(newPet);
     
     if (itsValid(newPet) == true) {
         salon.pets.push(newPet);
@@ -133,10 +134,6 @@ function register() {
 
 // OTHER FUNCTIONS
     
-
-function deletePet() {
-        console.log('Deleting pet');
-    }
     
     function init() {
         let pet1 = new Pet("Bruce", 6, "Male", "Pitbull", "Dog", "Full Service", "Debit" );
