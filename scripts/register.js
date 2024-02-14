@@ -21,7 +21,7 @@ function Pet(name, age, gender, breed, service, type, payment) {
     this.service = service;
     this.type = type;
     this.payment = payment;
-    this.id = petId++
+    this.id = petId++;
 }
 
 
@@ -73,25 +73,6 @@ function itsValid(aPet) {
     }
     return validation;
 }
-// const idMapping = {
-//     name: 'txtName',
-//     age: 'txtAge',
-//     gender: 'txtGender',
-//     breed: 'txtBreed',
-//     service: 'txtService',
-//     type: 'optType',
-//     payment: 'optPayment'
-// }
-
-// for (let inputId in aPet) {
-//     inputId = idMapping[inputId];
-//     console.log(typeof(inputId));
-//     document.getElementById(inputId).classList.remove('alert-error');
-
-//     if (aPet[inputId] == "") {
-//         validation = false;
-//         document.getElementById(inputId).classList.add('alert-error');
-//     }
 
 
 function showNotifications(msg, type) {
@@ -135,8 +116,17 @@ function register() {
     
 
 function deletePet() {
-        console.log('Deleting pet');
+    let deleteIndex;
+    for (let i = 0; i < salon.pets.length; i++){
+        let pet = salon.pets[i];
+        if (pet.id == petId) {
+            deleteIndex = i;
+            break;
+        }
     }
+    getE(getId).remove();
+    salon.pets.splice(deleteIndex, 1);
+}
     
     function init() {
         let pet1 = new Pet("Bruce", 6, "Male", "Pitbull", "Dog", "Full Service", "Debit" );
