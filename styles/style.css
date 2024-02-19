@@ -12,7 +12,7 @@ a:hover {
 
 body {
     margin: 1rem;
-    background-color: #ced4da;
+    background-color: #f6e2ee;
 }
 
 /* HEADER */
@@ -22,7 +22,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid green;
 }
 
 .home-header h1 {
@@ -65,7 +64,7 @@ body {
 }
 .home-container div {
     padding: 8px 12px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* margin: 4px 2px; */
     text-align: center;
 }
@@ -86,7 +85,6 @@ body {
 }
 
 .count-and-names section {
-    border: 2px solid green;
     text-align: center;    
     line-height: 30px;
 }
@@ -155,4 +153,9 @@ body {
     /* padding: 6px 16px; */
 }
 
-
+.card {
+    border: 3px solid gray;
+    border-radius: 20px;
+    margin: 0 12px;
+    padding: 8px;
+}

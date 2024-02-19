@@ -124,7 +124,7 @@ function deletePet() {
             break;
         }
     }
-    getE(getId).remove();
+    getE(petId).remove();
     salon.pets.splice(deleteIndex, 1);
 }
     

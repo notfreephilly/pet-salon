@@ -13,7 +13,14 @@
 </head>
 <body>
 
-<header></header>
+    <header class="home-header">
+        <h1>Furry Cutz</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
 
 <main>
 
@@ -43,7 +50,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Service:</label>
-            <select name="" id="txtService">
+            <select class="form-control form-control-sm" id="txtService">
                 <option value="">Nail Trimming</option>
                 <option value="">Hair Cut</option>
                 <option value="">Teeth Cleaning</option>
@@ -54,22 +61,34 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Payment method: </label>
-            <select name="" id="optPayment">
-                <option value="opt-debit">Debit</option>
-                <option value="opt-credit">Credit</option>
+            <select class="form-control form-control-sm" id="optPayment">
+                <option>Debit</option>
+                <option>Credit</option>
             </select>
         </div>
 
     </form>
     
-    <button class="btn btn-primary me-md 2" onclick="register()">Register</button>
-    <div class="cardj">
-        <h2>Registered pets <span id="totalPets"></span></h2>
+    <button class="btn btn-secondary me-md 2" onclick="register()">Register</button>
+    <div>
+    <h2>Registered pets <span id="totalPets"></span></h2>
         <div class="container" id="pets"></div>
     </div>
 
 
 </main>
+
+<footer class="home-footer">
+    <div class="salon-address">
+        <p>393 Woof Paw Rd</p>
+        <p>Petland, WW</p>
+        <p>40282</p>
+    </div>
+    <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+    </nav>
+</footer>
 
 
     <script src="scripts/display.js"></script>
