@@ -109,7 +109,11 @@ body {
 }
 
 .alert-error {
-    background-color: red;
+    background-color: #ff758f;
+}
+
+.alert-success {
+    background-color: #80ed99;
 }
 
 /* .info .container {

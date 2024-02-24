@@ -76,12 +76,14 @@ function itsValid(aPet) {
 
 
 function showNotifications(msg, type) {
-    getE('notifications').classList.remove('hidden')
-    getE('notifications').innerHTML = `<p class="${type}">${msg}</p>`
-    
-    setTimeout(function () {
-        getE('notifications').classList.remove('hidden')
-    }, 3000);
+    // getE('notifications').classList.remove('hidden');
+    $('#notifications').slideDown(2000);
+    getE('notifications').innerHTML = `<p class="${type}">${msg}</p>`;
+    $('#notifications').slideUp(2000);
+
+    // setTimeout(function () {
+    //     getE('notifications').classList.remove('hidden')
+    // }, 3000);
 }
 
 
@@ -94,6 +96,7 @@ function register() {
     
     if (itsValid(newPet) == true) {
         salon.pets.push(newPet);
+        saveArr(newPet, "petsDB");
         displayPetCards();
         // clcear input
 
@@ -104,7 +107,7 @@ function register() {
         inputService.value = "";
         inputType.value = "";
 
-        // showNotifications('Successful registration', "alert-error")
+        showNotifications('Successful registration', "alert-success")
     }
     else {
         showNotifications("Oops! Looks like you're missing something. Please check again.", "alert-error");
@@ -127,14 +130,31 @@ function deletePet() {
     getE(petId).remove();
     salon.pets.splice(deleteIndex, 1);
 }
-    
+   
+
+function getServices() {
+    // create predefined obj
+    let servicesList = readItems('services');
+    for (let i = 0; i < servicesList.length; i++){
+        let service = servicesList[i];
+        $('#txtService').append(
+            `<option value = "${service.description}">
+            ${service.description}</option>`
+        )
+    }
+}
+
+
+
     function init() {
         let pet1 = new Pet("Bruce", 6, "Male", "Pitbull", "Dog", "Full Service", "Debit" );
             let pet2 = new Pet("Charley", 12, "Female", "Cow", "Pasture-raised", "Behavior Training", "Credit");
-            let pet3 = new Pet("Shelly", 2, "Male");
+            let pet3 = new Pet("Shelly", 2, "Male", "Cat", "At-home grooming", "Long-haired", "Debit" );
         
-        salon.pets.push(pet1, pet2, pet3)
+        salon.pets.push(pet1, pet2, pet3);
+
         displayPetCards();
+        getServices();
 }
         
 window.onload = init;

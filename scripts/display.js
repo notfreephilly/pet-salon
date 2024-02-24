@@ -11,6 +11,7 @@ function displayPetNames() {
 
 
 function displayPetCards() {
+    let petList = readItems('petsDB')
     getE('pets').innerHTML = "";
     let card = ""
     for (let i = 0; i < salon.pets.length; i++){

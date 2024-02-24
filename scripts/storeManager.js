@@ -1,19 +1,22 @@
-function saveArr(item) {
+
+
+function saveArr(item, key) {
     let itemsArr = readItems();
     itemsArr.push(item);
     let val = JSON.stringify(itemsArr);
 
-    localStorage.setItem('services', val);
+    localStorage.setItem(key, val);
 }
 
-function readItems() {
-    let data = localStorage.getItem('services');
+function readItems(key) {
+    let data = localStorage.getItem(key);
 
-    if (!data) {
-        return [];
+    if (!data) { //not Data?
+        return []; //create the  array
     }
     else {
-        let list = JSON.parse(data)
+        //if we have data
+        let list = JSON.parse(data) // parse the data back
         return list;
     }
 }

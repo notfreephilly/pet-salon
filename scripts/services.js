@@ -21,13 +21,14 @@ function addService() {
 
     let newService = new Service(inputService, inputPrice);
     services.push(newService);
-    saveArr(newService)
-    displayItems(services);
+    saveArr(newService);
+    displayItems();
 
 }
 
 
-function displayItems(items) {
+function displayItems() {
+    let items = readItems(); //getting items from local storage
     let displayList = $('#services');
     displayList.html("");
     let li;
